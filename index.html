@@ -16,65 +16,74 @@
 
   <main>
     
-    <section class="wrapper">
+    <section class="wrapper rating__page ">
 
-      <span class="image__rating"><img src="../images/icon-star.svg" alt="Rating star"></span>
-      
-      <header>
-        <h2>How did we do?</h2> 
-      </header>
+        <article class="rating__state">
 
-      <article class="rating__state">
-
-        <p class="state__text">Please let us know how we did with your support request. All feedback is appreciated 
-        to help us improve our offering!</p>
-
-        <form class="rate__form" method="get">
+          <span class="image__rating"><img src="images/icon-star.svg" alt="Rating star"></span>
           
-          <ul class="rating__notes">
+          <header>
+            <h2>How did we do?</h2> 
+          </header>
 
-            <li>
-              <input class="form__radio" id="1" type="radio"name="rating" value="1">
-              <label for="1">1</label>
-            </li>
-            <li>
-              <input class="form__radio" id="2" type="radio"name="rating" value="2">
-              <label for="2">2</label>
-            </li>
-            <li>
-              <input class="form__radio" id="3" type="radio"name="rating" value="3">
-              <label for="3">3</label>
-            </li>  
-            <li>
-              <input class="form__radio" id="4" type="radio"name="rating" value="4">
-              <label for="4">4</label>
-            </li>  
-            <li>
-              <input class="form__radio" id="5" type="radio"name="rating" value="5">
-              <label for="5">5</label>
-            </li>  
-          
-          </ul>
+        
 
-          <input type="submit" class="submit__btn" onclick="#" value="Submit"> 
+          <p class="state__text">Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
 
-        </form>
+          <form class="rate__form" id="rates" method="get">
+            
+            <ul class="rating__notes">
 
-      </article>
+              <li>
+                <label for="1">1 
+                  <input class="form__radio" id="1" type="radio"name="rating" value="1">
+                </label>
+              </li>
+              <li>
+                <label for="2">2
+                  <input class="form__radio" id="2" type="radio"name="rating" value="2">
+                </label>
+              </li>
+              <li>
+                <label for="3">3
+                  <input class="form__radio" id="3" type="radio"name="rating" value="3">
+                </label>
+              </li>  
+              <li>
+                <label for="4">4
+                  <input class="form__radio" id="4" type="radio"name="rating" value="4">
+                </label>
+              </li>  
+              <li>
+                <label for="5">5
+                  <input class="form__radio" id="5" type="radio"name="rating" value="5">
+                </label>
+              </li>  
+            
+            </ul>
+
+            <input type="submit" class="submit__btn" id="submit" value="Submit"> 
+
+          </form>
+
+        </article>
 
     </section>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <section class="wrapper inactive">
+    <section class="wrapper  thanks__page inactive ">
 
       <article class="thanks__state">
         
         <header>
           
-          <div class="star"></div>
+          <div class="image__thanks"><img src="images/illustration-thank-you.svg" alt="Thank you"></div>
         
-          <h4>You selected <span class="rate"></span> out of 5</h4>
+        
+          <h4 class="rate__count__wrap">You selected <span class="rate__count"></span> out of 5</h4>
+        
 
         <h2>Thank you!</h2>
 
@@ -97,6 +106,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 
-
+  <script src="script.js"></script>
 </body>
 </html>

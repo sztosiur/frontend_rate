@@ -15,6 +15,7 @@
     --fw-l: 400;
     --fw-b: 700;
     --padding: 1em 1.5em;
+    
 }
 
 body{
@@ -42,36 +43,43 @@ p{
 li{
     list-style: none;
     
+    
 }
 
 
 main{
-    width:80wv;
+    
     height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+header{
+    margin:1em 0;
+}
+article{
+    margin:1em;
+}
+.state__text{
+    margin-top:3em;
+}
 .wrapper{
-    max-width: 50rem;
+    max-width:50rem;
     min-height: 50vh;
     background-color: var(--clr-d-blue);
-    margin: 0 auto;
-    padding:var(--padding);
-    display:grid;
-    justify-content: center;
-    align-items: center;
-    gap:0.5rem;    
+    padding: var(--padding);
     border-radius: 1rem;
+    margin:2em;
 }
 
-.inactive{
-    display: none;
+.rating__page{
+    display: grid;
+    justify-content: center;
 }
 
 .submit__btn{
     display: block;
+    margin-top: 1em;
 }
 .image__rating{
     display: flex;
@@ -81,53 +89,72 @@ main{
     width:4.5rem;
     height:4.5rem;
     border-radius:50%;
-    margin:var(--padding);
-}
-
-header{
-    padding:var(--padding);
-}
-article{
-    padding:var(--padding);
-    
+    margin: 1.5em 0;
 }
 
 form{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap:2em;
+    margin-top: 2em;
+}
+.form__radio{
+    visibility: hidden;
+    position: absolute;
 }
 .rating__notes{
-    display:flex;
-    justify-content: space-evenly;
-    padding:0;
-    margin:1.5em 0 1.5em -1em;
-}
-
-.form__radio{
-   visibility: hidden;
+    display:grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap:0.5em;
+    margin:1em 0;
+    
 }
 label{
-    display:flex;
-    height:5rem;
-    width:5rem;
-    align-items: center;
+    display: flex;
     justify-content: center;
-    cursor:pointer;
-    background-color: var(--clr-d-bluelight);
-    border-radius: 50%;
-    margin:0 1em;
+    align-items: center;
+    width:5rem;
+    height: 5rem;
+    background: var(--clr-d-bluelight);
     color:var(--clr-l-grey);
-    font-family: var(--ff);
+    font-weight:var(--fw-b);
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .submit__btn{
-    padding:var(--padding);
+    padding:1em 1.5em;
     border-radius:4rem;
     border:none;
     background-color:var(--clr-main-orange);
     color:var(--clr-white);
     font-family:var(--ff);
-    font-size:1.7rem;
+    font-size:1.6rem;
     cursor: pointer;
+    
+}
+
+/*THANK YOU STATE*/
+
+.thanks__page{
+    display:grid;
+    text-align: center;
+}
+
+.image__thanks{
+    display: flex;
+    justify-content: center;
+    margin:2em;
+}
+
+.rate__count__wrap{
+    padding: 0.5em 1em;
+    background: var(--clr-d-bluelight);
+    width: fit-content;
+    margin: 1.5em auto;
+    border-radius: 3em;
+}
+
+.inactive{
+    display: none;
 }
