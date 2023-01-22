@@ -100,13 +100,16 @@ form{
 .form__radio{
     visibility: hidden;
     position: absolute;
+    width:5rem;
+    height: 5rem;
+    border-radius: 50%;
 }
 .rating__notes{
     display:grid;
     justify-items: center;
     grid-template-columns: repeat(5, 1fr);
     gap:0.5em;
-    margin:1em 0;
+    margin:1em 0 1em -2.5em;
     
 }
 label{
@@ -154,7 +157,33 @@ label{
     margin: 1.5em auto;
     border-radius: 3em;
 }
+.thanks__state{
+    margin-bottom: 4em;
+}
 
 .inactive{
     display: none;
+}
+
+/*ACTIVE STATES*/
+.submit__btn:hover{
+    background: var(--clr-white);
+    color:var(--clr-main-orange);
+}
+.submit__btn:active{
+    background: var(--clr-l-grey);
+    color:var(--clr-main-orange);
+}
+
+label:hover{
+    background: var(--clr-main-orange);
+    color:var(--clr-white);
+}
+label:active{
+    background: var(--clr-l-grey);
+    color:var(--clr-white);
+}
+.label__active{
+    background: var(--clr-l-grey);
+    color:var(--clr-white);
 }
