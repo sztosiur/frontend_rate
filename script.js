@@ -5,10 +5,10 @@ const stateClass = document.querySelectorAll("section");
 const submitBtn = myForm.querySelector("#submit");
 const rateCount = document.querySelector(".rate__count");
 const label = myForm.querySelectorAll("label");
-
+let checkedLabel;
 
 radioGroup.forEach(n => addEventListener("click", ()=>{
-    let checkedLabel;
+    
     for(const radio of radioGroup){
         if(radio.checked){
             checkedLabel = radio.parentElement;
